@@ -16,6 +16,7 @@
     "passport-instagram": "^1.0.0"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "test": "echo \"Hello World\""
   }
 }
