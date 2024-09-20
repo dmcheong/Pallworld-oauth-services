@@ -1,6 +1,5 @@
 # outils en relation avec le service
-
-PORT=3006
+pallworld-front
 
 # Pallworld-oauth-service
 https://console.cloud.google.com/
