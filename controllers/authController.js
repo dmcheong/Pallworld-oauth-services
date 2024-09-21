@@ -19,7 +19,7 @@ exports.handleGoogleAuthCallback = async (req, res) => {
     // Stockez les tokens dans une base de données ou une session sécurisée
     console.log(tokens);
     // Redirection vers votre frontend avec le jeton d'accès dans l'URL
-    res.redirect('http://localhost:3001/?access_token=' + tokens.access_token);
+    res.redirect(`http://localhost:${process.env.PORT_FRONT}/?access_token=` + tokens.access_token);
   } catch (error) {
     console.error('Error retrieving access token', error);
     res.status(500).json({ error: 'Internal Server Error' });
